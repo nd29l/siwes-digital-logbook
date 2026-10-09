@@ -1,0 +1,6 @@
+{
+  "name": "SIWES Digital Logbook",
+  "description": "A production-grade digital logbook management system for SIWES (Students Industrial Work Experience Scheme) students and administrators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

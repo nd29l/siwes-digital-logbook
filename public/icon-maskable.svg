@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="purpleGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="emeraldGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Full bleed background for Android maskable cropping -->
+  <rect width="512" height="512" fill="url(#bgGradMask)" />
+
+  <!-- Center Graphic in safe-zone (scaled inside central 75%) -->
+  <g transform="translate(64, 64) scale(0.75)">
+    <!-- Book Backing / Cover -->
+    <rect x="110" y="96" width="292" height="320" rx="24" fill="#1e293b" stroke="#334155" stroke-width="6" />
+    
+    <!-- Spine Accent -->
+    <path d="M 110 120 C 110 106.7 120.7 96 134 96 L 156 96 L 156 416 L 134 416 C 120.7 416 110 405.3 110 392 Z" fill="url(#purpleGradMask)" />
+
+    <!-- Pages Layer -->
+    <rect x="164" y="112" width="222" height="288" rx="14" fill="#ffffff" />
+    <rect x="172" y="120" width="206" height="272" rx="10" fill="#f8fafc" />
+
+    <!-- Activity Log Lines -->
+    <rect x="194" y="152" width="162" height="12" rx="6" fill="#cbd5e1" />
+    <rect x="194" y="180" width="130" height="10" rx="5" fill="#e2e8f0" />
+    <rect x="194" y="204" width="148" height="10" rx="5" fill="#e2e8f0" />
+    <rect x="194" y="228" width="110" height="10" rx="5" fill="#e2e8f0" />
+
+    <line x1="194" y1="260" x2="356" y2="260" stroke="#f1f5f9" stroke-width="3" stroke-linecap="round" />
+
+    <rect x="194" y="280" width="162" height="10" rx="5" fill="#cbd5e1" />
+    <rect x="194" y="304" width="140" height="10" rx="5" fill="#e2e8f0" />
+    <rect x="194" y="328" width="100" height="10" rx="5" fill="#e2e8f0" />
+
+    <!-- Verification Badge (Seal of approval) -->
+    <circle cx="340" cy="340" r="54" fill="url(#emeraldGradMask)" stroke="#ffffff" stroke-width="6" />
+    <!-- Checkmark in Badge -->
+    <path d="M 318 340 L 333 355 L 364 324" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
